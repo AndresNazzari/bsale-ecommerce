@@ -9,6 +9,7 @@ export default (cors, depInySetup, container) => {
   app.use(express.urlencoded({ extended: true }));
 
   /*============================[Routes]============================*/
+  app.use('/api/category', container.resolve('categoryRoute'));
 
   /*============================[Server]============================*/
   return app;
