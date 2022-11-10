@@ -1,4 +1,4 @@
-export const API_URL = 'https://server-production-411c.up.railway.app/';
+export const API_URL = 'https://server-production-411c.up.railway.app';
 // 'https://bsale-ecommerce-production.up.railway.app/api';
 
 export const GET_CATEGORIES = `${API_URL}/category`;
