@@ -10,6 +10,7 @@ export default (cors, depInySetup, container) => {
 
   /*============================[Routes]============================*/
   app.use('/api/category', container.resolve('categoryRoute'));
+  app.use('/api/discount', container.resolve('discountRoute'));
 
   /*============================[Server]============================*/
   return app;
