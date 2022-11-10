@@ -1,5 +1,3 @@
-import { validationResult } from 'express-validator';
-
 export default class ProductController {
   constructor({ productService, page, limit, orderBy, order }) {
     this.productService = productService;

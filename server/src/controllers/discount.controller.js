@@ -1,5 +1,3 @@
-import { validationResult } from 'express-validator';
-
 export default class DiscountController {
   constructor({ discountService }) {
     this.discountService = discountService;

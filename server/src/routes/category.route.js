@@ -1,5 +1,4 @@
 import express from 'express';
-import { check } from 'express-validator';
 
 export default class CategoryRoute extends express.Router {
   constructor({ categoryController }) {
