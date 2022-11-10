@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSALE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Offcanvas navbar large">
+      <div class="container-fluid" bis_skin_checked="1">
+        <a class="navbar-brand" href="./">BSALE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+          bis_skin_checked="1"
+        >
+          <div class="offcanvas-header" bis_skin_checked="1">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">BSALE</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body" bis_skin_checked="1">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./">Home</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3 mt-lg-0" id="search-form" role="search">
+              <ul class="navbar-nav gap-3 justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <select
+                    class="form-select"
+                    id="categories-options"
+                    name="category"
+                    aria-label="Default select example"
+                  >
+                    <option selected value="">Select Category</option>
+                    <!-- categories via js -->
+                  </select>
+                </li>
+                <li class="nav-item">
+                  <input
+                    class="form-control me-2"
+                    id="pmin"
+                    type="text"
+                    name="pmin"
+                    placeholder="Min Price"
+                    aria-label="Min Price"
+                  />
+                </li>
+                <li class="nav-item">
+                  <input
+                    class="form-control me-2"
+                    id="pmax"
+                    type="text"
+                    name="pmax"
+                    placeholder="Max Price"
+                    aria-label="Max Price"
+                  />
+                </li>
+                <li class="nav-item">
+                  <select class="form-select" id="discount-options" name="discount" aria-label="Default select example">
+                    <option selected value="">Select Min Discount</option>
+                    <!-- discounts via js -->
+                  </select>
+                </li>
+                <li class="nav-item">
+                  <select
+                    class="form-select nav-item"
+                    id="order-options"
+                    name="order"
+                    aria-label="Default select example"
+                  >
+                    <option selected value="">Select Order</option>
+                    <option value="asc">Asc</option>
+                    <option value="desc">Desc</option>
+                  </select>
+                </li>
+                <li class="nav-item">
+                  <input
+                    class="form-control me-2"
+                    id="name-search-input"
+                    type="search"
+                    name="name"
+                    placeholder="Search name"
+                    aria-label="Search product"
+                  />
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-outline-success" id="name-search-btn" type="submit">Search</button>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <main id="main-container"></main>
+    <script type="module" src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
