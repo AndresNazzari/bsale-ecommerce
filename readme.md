@@ -37,6 +37,6 @@ Accede a la base de datos. Es de uso obligatorio
 
 # Resultado
 
-- Link deploy frontend:
-- Link repositorio backend:
-- Link repositorio frontend:
+- Link deploy frontend: [Deploy Ecommerce](https://bsale-ecommerce-ajn.netlify.app/)
+- Link repositorio backend: [BackEnd Repo](https://github.com/AndresNazzari/bsale-ecommerce/tree/master/server)
+- Link repositorio frontend: [FrontEnd Repo](https://github.com/AndresNazzari/bsale-ecommerce/tree/master/client)
