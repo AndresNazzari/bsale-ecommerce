@@ -27,7 +27,6 @@ Accede a la base de datos. Es de uso obligatorio
 - Usuario: bsale_test
 - Contraseña: bsale_test
 - Nombre db: bsale_test
-  Tip para la conexión: El servidor está configurado para que todas aquellas conexiones inactivas por más de 5 segundos sean abortadas, por lo que se requiere controlar la reconexión.
 
 ## Documentación
 
